@@ -27,59 +27,59 @@ const states = [
 // Cities data
 const cities = {
     1: [
-        { id: 1, name: 'Los Angeles' }, 
-        { id: 2, name: 'San Francisco' }, 
+        { id: 1, name: 'Los Angeles' },
+        { id: 2, name: 'San Francisco' },
         { id: 3, name: 'San Diego' },
-        { id: 4, name: 'Sacramento' }, 
-        { id: 5, name: 'San Jose' }, 
+        { id: 4, name: 'Sacramento' },
+        { id: 5, name: 'San Jose' },
         { id: 6, name: 'Fresno' }
     ],
     2: [
-        { id: 7, name: 'Houston' }, 
-        { id: 8, name: 'Dallas' }, 
+        { id: 7, name: 'Houston' },
+        { id: 8, name: 'Dallas' },
         { id: 9, name: 'Austin' },
-        { id: 10, name: 'San Antonio' }, 
-        { id: 11, name: 'Fort Worth' }, 
+        { id: 10, name: 'San Antonio' },
+        { id: 11, name: 'Fort Worth' },
         { id: 12, name: 'El Paso' }
     ],
     3: [
-        { id: 13, name: 'New York City' }, 
-        { id: 14, name: 'Buffalo' }, 
+        { id: 13, name: 'New York City' },
+        { id: 14, name: 'Buffalo' },
         { id: 15, name: 'Rochester' },
-        { id: 16, name: 'Syracuse' }, 
-        { id: 17, name: 'Albany' }, 
+        { id: 16, name: 'Syracuse' },
+        { id: 17, name: 'Albany' },
         { id: 18, name: 'Yonkers' }
     ],
     4: [
-        { id: 19, name: 'Miami' }, 
-        { id: 20, name: 'Orlando' }, 
+        { id: 19, name: 'Miami' },
+        { id: 20, name: 'Orlando' },
         { id: 21, name: 'Tampa' },
-        { id: 22, name: 'Jacksonville' }, 
-        { id: 23, name: 'Tallahassee' }, 
+        { id: 22, name: 'Jacksonville' },
+        { id: 23, name: 'Tallahassee' },
         { id: 24, name: 'St. Petersburg' }
     ],
     5: [
-        { id: 25, name: 'Chicago' }, 
-        { id: 26, name: 'Aurora' }, 
+        { id: 25, name: 'Chicago' },
+        { id: 26, name: 'Aurora' },
         { id: 27, name: 'Naperville' },
-        { id: 28, name: 'Rockford' }, 
-        { id: 29, name: 'Joliet' }, 
+        { id: 28, name: 'Rockford' },
+        { id: 29, name: 'Joliet' },
         { id: 30, name: 'Elgin' }
     ],
     6: [
-        { id: 31, name: 'Seattle' }, 
-        { id: 32, name: 'Tacoma' }, 
+        { id: 31, name: 'Seattle' },
+        { id: 32, name: 'Tacoma' },
         { id: 33, name: 'Spokane' },
-        { id: 34, name: 'Vancouver' }, 
-        { id: 35, name: 'Bellevue' }, 
+        { id: 34, name: 'Vancouver' },
+        { id: 35, name: 'Bellevue' },
         { id: 36, name: 'Everett' }
     ],
     7: [
-        { id: 37, name: 'Atlanta' }, 
-        { id: 38, name: 'Savannah' }, 
+        { id: 37, name: 'Atlanta' },
+        { id: 38, name: 'Savannah' },
         { id: 39, name: 'Augusta' },
-        { id: 40, name: 'Columbus' }, 
-        { id: 41, name: 'Macon' }, 
+        { id: 40, name: 'Columbus' },
+        { id: 41, name: 'Macon' },
         { id: 42, name: 'Roswell' }
     ],
     8: [
@@ -111,31 +111,31 @@ const cities = {
 
 const hotels = {
     1: [
-        { id: 1, name: 'Hotel California' }, 
+        { id: 1, name: 'Hotel California' },
         { id: 2, name: 'Beach Resort' }
     ],
     2: [
-        { id: 3, name: 'LA Resort' }, 
+        { id: 3, name: 'LA Resort' },
         { id: 4, name: 'Downtown Inn' }
     ],
     3: [
-        { id: 5, name: 'NYC Luxury Hotel' }, 
+        { id: 5, name: 'NYC Luxury Hotel' },
         { id: 6, name: 'Brooklyn Boutique' }
     ],
     4: [
-        { id: 7, name: 'Miami Beach Hotel' }, 
+        { id: 7, name: 'Miami Beach Hotel' },
         { id: 8, name: 'Orlando Grand' }
     ],
     5: [
-        { id: 9, name: 'Chicago Towers' }, 
+        { id: 9, name: 'Chicago Towers' },
         { id: 10, name: 'Wrigley Field Hotel' }
     ],
     6: [
-        { id: 11, name: 'Seattle Suites' }, 
+        { id: 11, name: 'Seattle Suites' },
         { id: 12, name: 'Evergreen Inn' }
     ],
     7: [
-        { id: 13, name: 'Atlanta Grand' }, 
+        { id: 13, name: 'Atlanta Grand' },
         { id: 14, name: 'Savannah Suites' }
     ],
     8: [
@@ -941,7 +941,7 @@ const foodDetails = {
     98: { price: '$17', speciality: 'Seared Scallops with Garlic Butter' },
     99: { price: '$21', speciality: 'Grilled Tuna Steaks with Wasabi Sauce' },
     100: { price: '$16', speciality: 'Vegan Stir Fry with Tofu and Vegetables' },
-     // Continuing up to 500...
+    // Continuing up to 500...
 };
 
 
@@ -1085,7 +1085,9 @@ const recipeSuggestions = {
 
 
 
-
+app.get('/', (req, res) => {
+    res.send('Hello, world!');
+});
 
 app.get('/api/states', (req, res) => {
     res.json(states);
