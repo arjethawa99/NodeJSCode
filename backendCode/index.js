@@ -1129,6 +1129,12 @@ app.post('/api/recipe', (req, res) => {
 });
 
 // Start the server
+<<<<<<< HEAD:backendCode/server.js
 app.listen(PORT, () => {
     console.log(`Server running at http://localhost:${PORT}`);
 });
+=======
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
+});
+>>>>>>> c50690123c43076228a1b04d1ead36e45fc5e5c2:backendCode/index.js

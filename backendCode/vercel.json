@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "version": 2,
   "builds": [
     {
@@ -13,3 +14,16 @@
     }
   ]
 }
+=======
+    "version":2,
+    "builds": [
+      { "src": "*.js", "use": "@vercel/node" }
+    ],
+    "routes": [
+        {
+          "src": "/(.*)",
+          "dest": "/"
+        }
+    ]
+  }
+>>>>>>> c50690123c43076228a1b04d1ead36e45fc5e5c2
